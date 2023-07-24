@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+		body {
+		    background: url(img/body_bck.png) repeat;
+		    margin: 0;
+		    padding: 0;
+		}
+		.container {
+		    color: #000000;
+		    margin: 0 auto;
+		    max-width: 981px;
+		}
+		.header {
+			
+			background: #ffffff;
+			margin-top: 1px;
+			height: 81px;
+			margin-left: 1px;
+			background-image: url('img/Leaf.png'),url('img/Leaf 2.png');
+			background-repeat: no-repeat,no-repeat;
+			background-position: 67%, 74%;
+		}
+		.logo {
+		    float: left;
+		    width: 575px;
+		}
+		.logo-img{
+			padding: 10px 15px 0 10px;
+		}
+		.center-logo{
+			padding: 0px 15px 22px 50px;
+		}
+		.search-box{
+			float: right;
+			width: 300px;
+			text-align: center;
+		}
+		.search-header h5{
+			margin: 10px 0px 0px 0px;
+			text-align: center;
+		}
+		.search-box-navbar nav a{
+			padding: 0 5px;
+		    font-size: 14px;
+		    font-weight: 600;
+		    color: #774240;
+		}
+		.search-bar{
+			margin-top: 6px;
+		}
+		.search-bar button{
+			margin:-6px;
+			background: #774240;
+			color: white;
+		}	
+		nav.navbar-menu {
+		   padding-top: 10px;
+	    background: #774240;
+	    color: white;
+	    height: 29px;
+	    border-bottom-right-radius: 18px;
+	    border-bottom-left-radius: 18px;
+	    border: 1px solid;
+			}
+		a {
+		    color: white;
+		    padding: 12px 18px;
+		    text-decoration: none;
+		    border-right: 1px solid;
+		}	
+		nav.navbar-menu span{
+			float: right;
+			margin-right: 23px;
+			font-size: 22px;
+			margin-top: -3px;
+			}	
+		.main-landing-page{
+			background: white;
+			width: 100%;
+			border-top-right-radius: 18px;
+	  		border-top-left-radius: 18px;
+	  		height: auto;
+	  		margin-top: 20px;
+	  		padding: 15px 1px 15px 8px;
+	  		display: inline-flex;
+
+		}		
+		.product-info-div{
+			
+			width: 20%;
+		}
+		.header-div h4{
+			 margin: 0;
+  			  padding: 9px 0;
+
+		}
+
+		.products-list {
+		    border: 1px solid #774240;background: #8080801a;
+		}
+		.header-div {
+		    background: #774240;
+		    color: white;
+		    padding: 2px 9px;
+		}
+		.product-header ul{
+		    padding: 0px 18px;
+		    margin: 10px 0px;
+		}
+		.product-header ul li {
+		    list-style-type: none;
+		    padding: 4px 0px;
+		} 
+
+
+
+		.product-header ul li img {
+		    height: 40px;
+		    padding-top: 9px;
+		}
+		.assistance{
+			border: 1px solid #774240;
+			margin-top: 20px;
+			background-image: url('img/cute woman.png');
+			background-size: cover;
+			height: 210px;
+			position: relative;
+		}
+
+		.assistance h2{
+			padding: 9px;
+			margin: 0;
+			font-size: 16px;
+			background: #ffffff73;
+			
+			text-transform: uppercase;
+			width: 100%;
+
+		}
+		.assistance .call{
+			position: absolute;
+			bottom: 0;
+			margin-bottom: 0;
+			font-size: 18px;
+		}
+		.update,.letest-news,.certificates{
+			height: auto;
+			margin-top:20px;border: 1px solid #774240;background: #8080801a;
+		}
+		.update-header-div {
+		    background: #774240;
+		    color: white;
+		    padding: 2px 9px;
+		}
+		.update-header-div h4{
+			 margin: 0;
+  			  padding: 9px 0;
+
+		}
+		.update-info-details{
+			    padding: 10px 24px;
+  			  font-size: 18px;
+		}
+		.update-info-details p{
+			text-align: center;
+			margin-top: 0;
+		}
+		.update-info-details input[type="text"]{
+			width: 92%;
+   		    margin-top: 8px;
+		}
+		.update-info-details .button {
+		    background-color: #774240;
+		    border: none;
+		    color: white;
+		        padding: 8px 10px;
+		    font-size: 12px;
+		   font-weight: 700;
+		    margin: 7px 36px;
+		    cursor: pointer;
+		}
+		.logo-div img {
+    height: 41px;
+    width: 48px;
+    margin-left: 13px;
+    margin-top: 14px;
+}
+.info-discription-div {
+    width: 79%;
+    
+    height: 200%;
+    margin: -13px 10px;
+    margin-right: 0;
+}
+.slider{
+	position: relative;
+}
+.info-discription-div img{
+width: 100%;
+height: 422px;
+object-fit: cover;
+border-top-right-radius: 12px;
+border-bottom-left-radius: 10px;
+
+}
+.slider-discription {
+position: absolute;
+    bottom: 18px;
+    right: 16px;
+    width: 38%;
+    background: #ffffffa3
+
+
+    ;
+    height: 137px;
+    padding: 0px 18px;
+    text-align: center;
+    font-size: 21px;
+}
+.slider-discription h2{
+	margin-top: 14px;
+}
+.starwest-details {
+    width: 73%;
+}
+.starwest-details h3 {
+font-size: 28px;
+    margin: 10px 26px;
+}
+.starwest-details ul li {
+    font-size: 16px;
+    padding: 5px;
+}
+.starwest-info {
+    display: inline-flex;
+    padding: 10px 8px;
+}
+.news-cerifications {
+    width: 27%;
+}
+.letest-news-header-div{
+    background: #774240;
+    color: white;
+    padding: 2px 9px;
+    }
+.letest-news-header-div h4{
+margin: 0;
+    padding: 4px 0;
+    font-size: 18px;
+    text-transform: uppercase;
+		}
+		.letest-news-details p{
+            text-align: center;
+            font-size: 14px;
+		}
+		.letest-news-details p a{
+			color: #241a1a;
+    padding: 0 5px;
+    text-decoration: underline;
+    border-right: none;	
+
+		}
+		.letest-news-details {
+    padding-bottom: 25px;
+}
+.certificates ul 
+{
+padding-left: 10px;
+margin-top: 10px;
+}
+
+.certificates ul li
+{
+list-style: none;
+font-size: 12px;
+padding: 3px 0;
+}
+.footer{
+	    background: white;
+    width: 100%;
+    border-bottom-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+    height: auto;
+    padding: 15px 1px 15px 8px;
+    display: inline-flex;
+}
+.footer-logo .logo-img {
+    padding: 20px;
+    width: 158px;
+    margin: 13px 0;
+
+}
+.footer-logo{
+	border-right: 1px solid #7742404a;
+}
+.products,.info,.Starwest-site,.links {
+    padding: 0px 21px;
+    border-right: 1px solid #7742404a;width: 21%;
+}
+.products p,.info p,.Starwest-site p,.links p {
+    margin: 4px;
+    font-size: 13px;text-transform: capitalize;
+}
+p.footer-subheadings {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #774240;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+.all-rights {
+    width: 288px;
+}
+.all-rights p {
+    
+    font-size: 14px;
+    text-align: end;
+    padding: 10px;
+
+}
+.Starwest-site {
+    width: 23%;
+}
+.slider-bar {
+    position: absolute;
+    bottom: 0;
+    background: #ffffff5c;
+    padding: 6px 20px;
+}
+.slider-bar img{
+	height: 14px;
+	width: 20px;
+}
+
+.slider-bar span {
+    margin: 5px;
+}
+
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="logo">
+				<img class="logo-img" src="https://www.starwestherb.com/templates/beez/images/logo.png">
+				<img class="center-logo" src="https://www.starwestherb.com/templates/beez/images/ingred_div.png">	
+			</div>
+			<div class="search-box">
+				<div class="search-header">
+					<h5>STARWEST SITES</h5>	
+				</div>
+				<div class="search-box-navbar">
+					<nav>
+						<a href="">Ingredients</a>
+						<a href="">Retail</a>
+						<a href="">Wholesale</a>
+					</nav>	
+				</div>
+				<div class="search-bar">
+					<form class="example" action="action_page.php">
+					  <input type="text" placeholder="Search.." name="search">
+					  <button type="submit">GO
+					  </button>
+					</form>	
+				</div>		
+			</div>
+			
+		</div>
+		<nav class="navbar-menu">
+            <a href="#"> Home</a>
+            <a href="#"> About Us</a>	
+            <a href="#"> Quality Assurance</a>	
+            <a href="#">Environment</a>				
+            <a href="#"> contact Us</a>	
+            
+            <span>Ph: 1-888-273-4372</span>
+		</nav>
+		<div class="main-landing-page">
+			<div class="product-info-div">
+				<div class="products-list">
+					<div class="product-header">
+						<div class="header-div">
+							<h4>PRODUCT</h4>
+							
+						</div>
+						<ul>
+							<li>-Botanicals</li>
+							<li>-Organic Botanicals</li>
+							<li>-pices</li>
+							<li>-Organic Spices</li>
+							<li>-Spice Blends</li>
+							<li>-Teas</li>
+							<li>-Other Products</li>
+							<li><img src="https://cdn.raveretailer.com/FC50E1B65A/2022/09/images/GSR_632a63aa1b0fb9987201663726010.png"></li>
+						</ul>
+						
+					</div>
+					
+				</div>
+				<div class="assistance">
+					<h2 >Need Assistance?</h2>
+
+					<h2 class="call">CALL: 1-888-800-4372</h2>
+				</div>
+				<div class="update">
+					<div class="update-header-div">
+							<h4 >GET UPDATE</h4>
+							
+						</div>
+						<div class="update-info-details">
+							<p>get automatic update on you certification</p>
+							  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+							  <label for="vehicle1">Organic Update </label><br>
+							  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+							  <label for="vehicle2"> Kosher Update</label><br>
+
+							  <input type="text" id="fname" placeholder="Name">
+							  <input type="text" id="fname" placeholder="Email Address">
+							  <button class="button">SIGN UP</button>
+							  <div class="logo-div">
+							  
+							  	<img src="img/qai logo copy.png">
+							  	<img src="img/kosher logo copy.png">
+							  	
+							  </div>
+						</div>
+				</div>
+				
+			</div>
+			<div class="info-discription-div">
+				<div class="slider">
+					<img src="img/Layer 67.png">
+					<div class="slider-discription">
+						<h2>
+							Premium igredient supplier of botanicals herbs and spices
+						</h2>
+					</div>
+					<div class="slider-bar">
+						<img src="img/Arrow - Left.png"> <span>1 </span>
+						<span><b>2</b></span>
+						<span> 3</span> 
+						<img src="img/Arrow - right.png">
+						
+					</div>
+				</div>
+				<div class="starwest-info">
+					<div class="starwest-details">
+						<h3> Starwest Botanica,Inc</h3>
+						<ul>
+							<li>
+								Manufacture & processor, with an emphasis on certified organic Ingredient.
+							</li>
+							<li>
+								Supplies quantites form 25 pound to full cantainer.
+							</li>
+							<li>
+								Complete milling, blending & formulating services
+							</li>
+							<li>Modern In-house Quality Control Laboratory, providing efficient microbiology, heavy metal & identity testing.</li>
+							<li>cGMP- & FDA-comliant manufacturing protocols are followed.
+								
+							</li>
+							<li>
+								Specification sheet, certificates of Analysis, Material Safty Data sheets & other documents are procided
+							</li>
+							<li>
+								82,000 sq. ft,warehouse enable us to maintain a sizeble prodduct inventory & maintain adequate stock levels.
+							</li>
+						</ul>		
+					</div>
+					<div class="news-cerifications">
+						<div class="letest-news">
+							<div class="letest-news-header-div">
+									<h4 >letest news</h4>
+									
+								</div>
+								<div class="letest-news-details">
+									<p>And thus have these naked Nantuketers, these sea hermits, issuing from blah...<a>Read More</a></p>
+									<p> " How have you bewitched them?" asked tare tarkas one afternoon, when.. <a href="#"> Read More</a></p>
+								</div>
+						</div>
+						<div class="certificates">
+							<div class="letest-news-header-div">
+									<h4 >letest news</h4>
+									
+								</div>
+								<ul>
+										<li>- 2009 AIB Audit Report</li>
+										<li>- Organic System Plan</li>
+										<li>- Organic Ceritificate of compliance</li>
+										<li>- Kosher certification</li>
+									</ul>
+						</div>	
+					</div>
+					
+				</div>
+				
+			</div>
+
+		</div>
+		<div class="footer">
+			<div class="footer-logo">
+				<img class="logo-img" src="https://www.starwestherb.com/templates/beez/images/logo.png">	
+			</div>
+
+			<div class="products">
+				<p class="footer-subheadings">products</p>
+				<p>Botanicals</p>
+				<p>Organic Botanicals</p>
+				<p>Spices</p>
+				<p>oragnic spices</p>
+			</div>
+			<div class="info">
+				<p class="footer-subheadings">info</p>
+				<p>About Us</p>
+				<p>contact us</p>
+				<p>certificates</p>
+				<p>services</p>
+			</div>
+			<div class="Starwest-site">
+				<p class="footer-subheadings">Starwest site</p>
+				<p>ingredient</p>
+				<p>retails</p>
+				<p>wholesale</p>
+				
+			</div>
+			<div class="links">
+				<p class="footer-subheadings">links</p>
+				<p>disclaimer</p>
+				<p>privacy</p>
+				
+				
+			</div>
+			<div class="all-rights">
+				<p>
+					2010 starwestHerb.com all rights reserved.
+				</p>
+				
+			</div>
+				
+		</div>
+	</div>
+
+	
+
+
+
+</body>
+</html>
